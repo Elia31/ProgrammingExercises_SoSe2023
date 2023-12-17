@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="controller" prefHeight="800.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.carsellingplatform.DashboardController">
+   <children>
+      <ComboBox fx:id="brand" layoutX="80.0" layoutY="155.0" prefWidth="100.0" promptText="default" style="-fx-background-color: transparent; -fx-border-color: grey;" />
+      <ComboBox fx:id="model" layoutX="200.0" layoutY="155.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-border-color: grey;" />
+      <ComboBox fx:id="price" layoutX="320.0" layoutY="155.0" prefWidth="100.0" promptText="default" style="-fx-background-color: transparent; -fx-border-color: grey;" />
+      <ComboBox fx:id="seat" layoutX="440.0" layoutY="155.0" prefWidth="100.0" promptText="default" style="-fx-background-color: transparent; -fx-border-color: grey;" />
+      <ComboBox fx:id="registrationDate" layoutX="560.0" layoutY="155.0" prefWidth="100.0" promptText="default" style="-fx-background-color: transparent; -fx-border-color: grey;" />
+      <ComboBox fx:id="mile" layoutX="680.0" layoutY="155.0" prefWidth="100.0" promptText="default" style="-fx-background-color: transparent; -fx-border-color: grey;" />
+      <Label layoutX="80.0" layoutY="130.0" text="Brand" />
+      <Label layoutX="200.0" layoutY="130.0" text="Model" />
+      <Label layoutX="320.0" layoutY="130.0" text="Price in €" />
+      <Label layoutX="440.0" layoutY="130.0" text="Seats" />
+      <Label layoutX="560.0" layoutY="130.0" text="Registration year" />
+      <Label layoutX="680.0" layoutY="130.0" text="Kilometers" />
+      <Button fx:id="searchButton" layoutX="800.0" layoutY="125.0" mnemonicParsing="false" onAction="#search" style="-fx-background-color: d78a51;" text="Search" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <ScrollPane layoutX="135.0" layoutY="235.0" prefHeight="500.0" prefWidth="700.0">
+         <content>
+            <VBox fx:id="listingsBox" prefHeight="499.0" prefWidth="699.0" />
+         </content>
+      </ScrollPane>
+      <Label fx:id="searchTextLabel" layoutX="83.0" layoutY="195.0" prefHeight="17.0" prefWidth="698.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="resetButton" layoutX="800.0" layoutY="155.0" mnemonicParsing="false" onAction="#resetButton" prefWidth="60.0" style="-fx-background-color: d78a51;" text="Reset" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Pane layoutY="-2.0" prefHeight="806.0" prefWidth="65.0" style="-fx-background-color: d78a51;" />
+      <Pane layoutX="-1.0" prefHeight="113.0" prefWidth="906.0" style="-fx-background-color: d78a51;">
+         <children>
+            <Label layoutX="132.0" layoutY="14.0" prefHeight="43.0" prefWidth="329.0" text="Dashboard" textFill="WHITE">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+            <Button fx:id="myListings" layoutX="707.0" layoutY="44.0" mnemonicParsing="false" onAction="#myListingsButton" style="-fx-background-color: #B76C3C;" stylesheets="@css/style.css" text="My Listings" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Button fx:id="logout" layoutX="800.0" layoutY="44.0" mnemonicParsing="false" onAction="#logoutButton" style="-fx-background-color: #B76C3C;" stylesheets="@css/style.css" text="Logout" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Button fx:id="myProfile" layoutX="644.0" layoutY="44.0" mnemonicParsing="false" onAction="#myProfilButton" style="-fx-background-color: #B76C3C;" stylesheets="@css/style.css" text="Profile" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Button fx:id="createListing" layoutX="510.0" layoutY="44.0" mnemonicParsing="false" onAction="#createListingButton" prefHeight="27.0" prefWidth="125.0" style="-fx-background-color: #B76C3C;" stylesheets="@css/style.css" text="Create Listing" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Label fx:id="usernameLabel" layoutX="780.0" layoutY="11.0" prefHeight="18.0" prefWidth="114.0" text="Username" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font></Label>
+            <ImageView fitHeight="92.0" fitWidth="132.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/CSP.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="730.0" layoutY="11.0" text="User:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

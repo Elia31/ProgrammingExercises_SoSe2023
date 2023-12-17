@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="490.0" prefWidth="644.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.carsellingplatform.EditProfilController">
+    <children>
+        <Pane layoutY="2.0" prefHeight="488.0" prefWidth="644.0">
+            <children>
+                <Pane layoutX="-6.0" prefHeight="554.0" prefWidth="249.0">
+                    <children>
+                        <Rectangle fx:id="leftRectangle" arcHeight="5.0" arcWidth="5.0" fill="#d78a51" height="504.0" layoutX="-7.0" layoutY="-10.0" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" width="229.0" />
+                        <Rectangle fx:id="upperRectangle" arcHeight="5.0" arcWidth="5.0" fill="#d78a51" height="105.0" layoutY="-7.0" stroke="TRANSPARENT" strokeType="OUTSIDE" width="652.0" />
+                        <Label fx:id="RegistrationText" layoutX="19.0" layoutY="26.0" prefHeight="74.0" prefWidth="249.0" text="Edit Profil" textFill="#fffffff2">
+                            <font>
+                                <Font name="Futura Medium" size="56.0" />
+                            </font>
+                        </Label>
+                  <ImageView fitHeight="182.0" fitWidth="185.0" layoutX="17.0" layoutY="163.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/CSP.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="usernameLabel" layoutX="453.0" layoutY="63.0" text="UsernameLabel" textFill="WHITE">
+                     <font>
+                        <Font name="Futura Medium" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="usernameLabel1" layoutX="385.0" layoutY="63.0" text="User:" textFill="WHITE">
+                     <font>
+                        <Font name="Futura Medium" size="25.0" />
+                     </font>
+                  </Label>
+                    </children>
+                </Pane>
+                <Rectangle fx:id="rightRectangle" arcHeight="5.0" arcWidth="5.0" fill="#ffffffd1" height="396.0" layoutX="214.0" layoutY="98.0" stroke="TRANSPARENT" strokeType="INSIDE" width="430.0" />
+                <Label fx:id="FirstNameText" layoutX="261.0" layoutY="118.0" text="First Name">
+                    <font>
+                        <Font name="Futura Medium" size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="FirstNameField" layoutX="261.0" layoutY="140.0" style="-fx-border-color: grey; -fx-border-width: 0 0 1 0; -fx-background-color: transparent;">
+               <font>
+                  <Font name="Futura Medium" size="14.0" />
+               </font></TextField>
+                <Label fx:id="LastNameText" layoutX="461.0" layoutY="118.0" text="Last Name">
+                    <font>
+                        <Font name="Futura Medium" size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="LastNameField" layoutX="463.0" layoutY="140.0" prefHeight="29.0" prefWidth="175.0" style="-fx-border-color: grey; -fx-border-width: 0 0 1 0; -fx-background-color: transparent;">
+               <font>
+                  <Font name="Futura Medium" size="14.0" />
+               </font></TextField>
+                <Label fx:id="CityText" layoutX="261.0" layoutY="208.0" text="City">
+                    <font>
+                        <Font name="Futura Medium" size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="CityField" layoutX="261.0" layoutY="225.0" style="-fx-background-color: transparent; -fx-border-width: 0 0 1 0; -fx-border-color: grey;">
+                    <font>
+                        <Font name="Futura Medium" size="14.0" />
+                    </font>
+                </TextField>
+                <Label fx:id="AddressText" layoutX="460.0" layoutY="208.0" text="Address">
+                    <font>
+                        <Font name="Futura Medium" size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="AddressField" layoutX="463.0" layoutY="225.0" prefHeight="29.0" prefWidth="182.0" style="-fx-border-color: grey; -fx-border-width: 0 0 1 0; -fx-background-color: transparent;">
+               <font>
+                  <Font name="Futura Medium" size="14.0" />
+               </font></TextField>
+                <Label fx:id="PasswordText" layoutX="265.0" layoutY="277.0" text="Password">
+                    <font>
+                        <Font name="Futura Medium" size="14.0" />
+                    </font>
+                </Label>
+                <Label fx:id="ConfirmPasswordText" layoutX="259.0" layoutY="348.0" text="Confirm Password">
+                    <font>
+                        <Font name="Futura Medium" size="14.0" />
+                    </font>
+                </Label>
+                <PasswordField fx:id="PasswordField" layoutX="259.0" layoutY="296.0" prefHeight="26.0" prefWidth="192.0" style="-fx-background-color: TRANSPARENT; -fx-border-color: grey; -fx-border-width: 0 0 1 0;">
+               <font>
+                  <Font name="Futura Medium" size="14.0" />
+               </font></PasswordField>
+                <PasswordField fx:id="ConfirmPasswordField" layoutX="256.0" layoutY="375.0" prefHeight="25.0" prefWidth="199.0" style="-fx-background-color: TRANSPARENT; -fx-border-color: grey; -fx-border-width: 0 0 1 0;">
+               <font>
+                  <Font name="Futura Medium" size="14.0" />
+               </font></PasswordField>
+                <Button fx:id="UpdateButton" alignment="CENTER" contentDisplay="CENTER" layoutX="478.0" layoutY="367.0" mnemonicParsing="false" onAction="#UpdateButtonClicked" prefHeight="19.0" prefWidth="112.0" style="-fx-background-color: d78a51;" text="Update" textFill="WHITE">
+                    <font>
+                        <Font name="Futura Medium" size="16.0" />
+                    </font></Button>
+                <Label fx:id="PasswordText1" layoutX="463.0" layoutY="292.0" text="Password Requirements:" underline="true">
+                    <font>
+                        <Font name="Futura Medium" size="13.0" />
+                    </font>
+                </Label>
+                <Label fx:id="PasswordText11" layoutX="471.0" layoutY="309.0" text="-One Capital Letter">
+                    <font>
+                        <Font name="Futura Medium" size="11.0" />
+                    </font>
+                </Label>
+                <Label fx:id="PasswordText12" layoutX="471.0" layoutY="325.0" text="-One digit (1, 2, 3 ...)">
+                    <font>
+                        <Font name="Futura Medium" size="11.0" />
+                    </font>
+                </Label>
+                <Label fx:id="PasswordText13" layoutX="471.0" layoutY="340.0" text="-One speacial character (!*+~#..)">
+                    <font>
+                        <Font name="Futura Medium" size="11.0" />
+                    </font>
+                </Label>
+                <Button fx:id="GoBackButton" alignment="CENTER" layoutX="230.0" layoutY="441.0" mnemonicParsing="false" onAction="#GoBackButtonClicked" prefHeight="33.0" prefWidth="112.0" style="-fx-background-color: d78a51;" text="Back" textFill="WHITE">
+                    <font>
+                        <Font name="Futura Medium" size="16.0" />
+                    </font></Button>
+            <Button fx:id="DeleteButton" alignment="CENTER" layoutX="478.0" layoutY="441.0" mnemonicParsing="false" onAction="#DeleteButtonClicked" prefHeight="33.0" prefWidth="143.0" style="-fx-background-color: d78a51;" text="Delete Account" textFill="WHITE">
+               <font>
+                  <Font name="Futura Medium" size="16.0" />
+               </font>
+            </Button>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

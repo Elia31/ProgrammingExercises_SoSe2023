@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="707.0" prefWidth="748.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.carsellingplatform.AddListingController">
+    <children>
+        <Pane fx:id="AddListingPane" prefHeight="707.0" prefWidth="748.0" style="-fx-background-color: white;">
+            <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d78a51" height="69.0" layoutX="36.0" stroke="TRANSPARENT" strokeType="INSIDE" width="721.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d78a51" height="717.0" layoutY="-8.0" stroke="TRANSPARENT" strokeType="INSIDE" width="43.0" />
+                <Label fx:id="createListingLabel" layoutX="19.0" layoutY="14.0" prefHeight="35.0" prefWidth="427.0" text="Create a new car listing" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="36.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="ListingNameTextfield" layoutX="244.0" layoutY="110.0" promptText="Name of listing" style="-fx-background-color: transparent; -fx-border-color: grey; -fx-border-width: 0 0 1 0;;">
+               <font>
+                  <Font size="14.0" />
+               </font></TextField>
+                <Label fx:id="ListingNameLabel" layoutX="244.0" layoutY="85.0" text="Listing Name">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+                <Label fx:id="PriceLabel" layoutX="443.0" layoutY="85.0" prefHeight="17.0" prefWidth="43.0" text="Price">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+                <Label fx:id="BrandLabel" layoutX="248.0" layoutY="156.0" text="Brand">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+                <Label fx:id="ModelLabel" layoutX="441.0" layoutY="156.0" text="Model">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+                <Label fx:id="ColourLabel" layoutX="248.0" layoutY="218.0" text="Colour">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+                <Label fx:id="BodyTypeLabel" layoutX="624.0" layoutY="156.0" text="Body type">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+                <Label fx:id="DoorsLabel" layoutX="441.0" layoutY="218.0" text="Number of doors">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+                <Label fx:id="SeatsLabel" layoutX="624.0" layoutY="218.0" text="Number of seats">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+                <Label fx:id="InteriorLabel" layoutX="248.0" layoutY="281.0" text="Interior Material">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+                <Label fx:id="AirbagsLabel" layoutX="443.0" layoutY="281.0" text="Air Bags">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+                <Label fx:id="ACLabel" layoutX="625.0" layoutY="281.0" text="Air Conditioning">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+                <Label fx:id="RegistrationDateLabel" layoutX="81.0" layoutY="338.0" text="Registration Date">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+                <Label fx:id="GeneralInspectionLabel" layoutX="248.0" layoutY="338.0" text="Last general inspection">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+                <Label fx:id="ConsumptionLabel" layoutX="442.0" layoutY="405.0" text="Consumption (l per 100km)">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+                <Label fx:id="MilesLabel" layoutX="628.0" layoutY="338.0" text="Miles">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+                <Label fx:id="OwnersLabel" layoutX="443.0" layoutY="338.0" text="Number of Pre-Owners">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+                <Label fx:id="EmissionClassLabel" layoutX="81.0" layoutY="405.0" text="Emission Class">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+                <Label fx:id="EnvironmentalBadgeLabel" layoutX="248.0" layoutY="405.0" text="Environmental Badge">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+                <Label fx:id="EngineLabel" layoutX="81.0" layoutY="464.0" text="Engine Type">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+                <Label fx:id="PerformanceLabel" layoutX="248.0" layoutY="464.0" text="Performance (in Horse Power)">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+                <Label fx:id="CylinderCapacityLabel" layoutX="441.0" layoutY="464.0" text="Cylinder Capacity">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+                <Label fx:id="GearboxLabel" layoutX="628.0" layoutY="464.0" text="Gearbox">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+                <Label fx:id="FuelTypeLabel" layoutX="626.0" layoutY="405.0" text="Fuel type">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+                <Label fx:id="DescriptionLabel" layoutX="65.0" layoutY="530.0" text="Description">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+                <TextArea fx:id="DescriptionArea" layoutX="65.0" layoutY="555.0" prefHeight="132.0" prefWidth="524.0" style="-fx-border-color: grey;" />
+                <TextField fx:id="PriceTextField" layoutX="441.0" layoutY="110.0" prefHeight="30.0" prefWidth="106.0" promptText="Price of listing" style="-fx-background-color: transparent; -fx-border-color: grey; -fx-border-width: 0 0 1 0;;">
+               <font>
+                  <Font size="14.0" />
+               </font></TextField>
+                <TextField fx:id="BrandTextfield" layoutX="244.0" layoutY="180.0" promptText="Brand of car" style="-fx-background-color: transparent; -fx-border-color: grey; -fx-border-width: 0 0 1 0;;">
+               <font>
+                  <Font size="14.0" />
+               </font></TextField>
+                <TextField fx:id="ModelTextField" layoutX="441.0" layoutY="180.0" prefHeight="30.0" prefWidth="158.0" promptText="Model of car" style="-fx-background-color: transparent; -fx-border-color: grey; -fx-border-width: 0 0 1 0;;">
+               <font>
+                  <Font size="14.0" />
+               </font></TextField>
+                <ChoiceBox fx:id="DoorsChoice" layoutX="440.0" layoutY="245.0" prefHeight="30.0" prefWidth="69.0" style="-fx-background-color: transparent; -fx-border-color: grey;" />
+                <ChoiceBox fx:id="SeatsChoice" layoutX="621.0" layoutY="245.0" prefHeight="30.0" prefWidth="69.0" style="-fx-background-color: transparent; -fx-border-color: grey;" />
+                <DatePicker fx:id="RegistrationDate" layoutX="82.0" layoutY="365.0" prefHeight="30.0" prefWidth="149.0" style="-fx-background-color: transparent; -fx-border-color: grey;" />
+                <DatePicker fx:id="GeneralInspectionDate" layoutX="247.0" layoutY="365.0" prefHeight="30.0" prefWidth="158.0" style="-fx-background-color: transparent; -fx-border-color: grey;" />
+                <ChoiceBox fx:id="OwnersChoice" layoutX="439.0" layoutY="365.0" prefHeight="30.0" prefWidth="69.0" style="-fx-background-color: transparent; -fx-border-color: grey;" />
+                <TextField fx:id="MilesTextField" layoutX="624.0" layoutY="365.0" prefHeight="25.0" prefWidth="106.0" promptText="Miles" style="-fx-background-color: transparent; -fx-border-color: grey; -fx-border-width: 0 0 1 0;;">
+               <font>
+                  <Font size="14.0" />
+               </font></TextField>
+                <ChoiceBox fx:id="EmissionClassChoice" layoutX="79.0" layoutY="422.0" prefHeight="25.0" prefWidth="133.0" style="-fx-background-color: transparent; -fx-border-color: grey;" />
+                <ChoiceBox fx:id="EnvironmentalBadgeChoice" layoutX="247.0" layoutY="422.0" prefHeight="25.0" prefWidth="133.0" style="-fx-background-color: transparent; -fx-border-color: grey;" />
+                <TextField fx:id="ConsumptionTextfield" layoutX="441.0" layoutY="422.0" prefHeight="30.0" prefWidth="99.0" promptText="Consumption" style="-fx-background-color: transparent; -fx-border-color: grey; -fx-border-width: 0 0 1 0;;">
+               <font>
+                  <Font size="14.0" />
+               </font></TextField>
+                <ChoiceBox fx:id="FuelChoice" layoutX="626.0" layoutY="422.0" prefHeight="30.0" prefWidth="106.0" style="-fx-background-color: transparent; -fx-border-color: grey;" />
+                <ChoiceBox fx:id="EngineChoice" layoutX="82.0" layoutY="491.0" prefHeight="30.0" prefWidth="133.0" style="-fx-background-color: transparent; -fx-border-color: grey;" />
+                <TextField fx:id="PerformanceTextField" layoutX="249.0" layoutY="491.0" prefHeight="25.0" prefWidth="69.0" promptText="PS" style="-fx-background-color: transparent; -fx-border-color: grey; -fx-border-width: 0 0 1 0;;">
+               <font>
+                  <Font size="14.0" />
+               </font></TextField>
+                <ChoiceBox fx:id="GearboxChoice" layoutX="624.0" layoutY="491.0" prefHeight="30.0" prefWidth="106.0" style="-fx-background-color: transparent; -fx-border-color: grey;" />
+                <ImageView fx:id="CarPicture" fitHeight="169.0" fitWidth="171.0" layoutX="50.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="C:/Users/labin/IdeaProjects/CarSellingPlatform/src/main/resources/com/example/carsellingplatform/images/No-Image-Placeholder.svg.png" />
+                    </image>
+                </ImageView>
+                <Button fx:id="AddPictureButton" layoutX="80.0" layoutY="277.0" mnemonicParsing="false" onAction="#AddPictureButtonClicked" style="-fx-background-color: d78a51;" text="Add Picture" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+                <Button fx:id="createListingButton" layoutX="624.0" layoutY="606.0" mnemonicParsing="false" onAction="#CreateListingButtonClicked" style="-fx-background-color: d78a51;" text="Create Listing" textFill="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+                <ChoiceBox fx:id="BodyTypeChoice" layoutX="624.0" layoutY="180.0" prefHeight="30.0" prefWidth="113.0" style="-fx-background-color: transparent; -fx-border-color: grey;" />
+                <ChoiceBox fx:id="ConditionChoice" layoutX="624.0" layoutY="110.0" prefHeight="30.0" prefWidth="113.0" style="-fx-background-color: transparent; -fx-border-color: grey;" />
+                <Label fx:id="ConditionLabel" layoutX="621.0" layoutY="85.0" text="Condition">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+                <ChoiceBox fx:id="CylinderCapacityChoice" layoutX="440.0" layoutY="491.0" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-border-color: grey;" />
+                <ChoiceBox fx:id="AirBagChoice" layoutX="446.0" layoutY="302.0" prefHeight="30.0" prefWidth="133.0" style="-fx-background-color: transparent; -fx-border-color: grey;" />
+                <ChoiceBox fx:id="InteriorMaterialChoice" layoutX="243.0" layoutY="302.0" prefHeight="30.0" prefWidth="133.0" style="-fx-background-color: transparent; -fx-border-color: grey;" />
+                <ChoiceBox fx:id="ACChoice" layoutX="624.0" layoutY="302.0" prefHeight="30.0" prefWidth="113.0" style="-fx-background-color: transparent; -fx-border-color: grey;" />
+            <Label layoutX="542.0" layoutY="112.0" text="€">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="ColourPicker" layoutX="243.0" layoutY="245.0" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: transparent; -fx-border-color: grey;" />
+            <Button fx:id="GoBack" layoutX="626.0" layoutY="657.0" mnemonicParsing="false" onAction="#GoBackClicked" style="-fx-background-color: d78a51;" text="Go Back" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

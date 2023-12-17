@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.carsellingplatform.ListingViewController">
+   <center>
+      <AnchorPane prefHeight="400.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane layoutX="331.0" layoutY="30.0" prefHeight="229.0" prefWidth="406.0" style="-fx-border-color: grey;">
+               <children>
+                  <TextField fx:id="ListingNameTextfield" alignment="CENTER" editable="false" layoutX="14.0" layoutY="14.0" prefHeight="32.0" prefWidth="380.0" style="-fx-border-color: grey; -fx-border-width: 0 0 1 0; -fx-background-color: transparent; -fx-text-fill: black;">
+                     <font>
+                        <Font name="Futura Medium" size="16.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="priceTextfield" editable="false" layoutX="54.0" layoutY="51.0" prefHeight="30.0" prefWidth="114.0" style="-fx-background-color: transparent; -fx-border-width: 0 0 1 0; -fx-border-color: grey; -fx-text-fill: black;">
+                     <font>
+                        <Font name="Futura Medium" size="15.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="usernameTextfield" editable="false" layoutX="257.0" layoutY="50.0" prefHeight="31.0" prefWidth="145.0" style="-fx-background-color: transparent; -fx-border-color: grey; -fx-border-width: 0 0 1 0; -fx-text-fill: black;">
+                     <font>
+                        <Font name="Futura Medium" size="15.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="addressTextField" editable="false" layoutX="230.0" layoutY="101.0" prefHeight="31.0" prefWidth="175.0" style="-fx-background-color: transparent; -fx-border-color: grey; -fx-border-width: 0 0 1 0; -fx-text-fill: black;">
+                     <font>
+                        <Font name="Futura Medium" size="15.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="emailTextField" editable="false" layoutX="66.0" layoutY="143.0" prefHeight="31.0" prefWidth="277.0" style="-fx-background-color: transparent; -fx-border-width: 0 0 1 0; -fx-border-color: grey; -fx-text-fill: black;">
+                     <font>
+                        <Font name="Futura Medium" size="15.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="writeMailButton" layoutX="171.0" layoutY="186.0" mnemonicParsing="false" onAction="#writeEmail" style="-fx-background-color: d78a51;" text="Write Email" textFill="WHITE">
+                     <font>
+                        <Font name="Futura Medium" size="15.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="14.0" layoutY="56.0" text="Price:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="201.0" layoutY="57.0" text="Seller:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="164.0" layoutY="106.0" text="Address:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="150.0" text="Email:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="13.0" layoutY="107.0" text="City:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="cityTextField" editable="false" layoutX="46.0" layoutY="101.0" prefHeight="31.0" prefWidth="113.0" style="-fx-background-color: transparent; -fx-border-color: grey; -fx-border-width: 0 0 1 0; -fx-text-fill: black;">
+                     <font>
+                        <Font name="Futura Medium" size="15.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="15.0" layoutY="268.0" prefHeight="320.0" prefWidth="572.0">
+               <children>
+                  <Button fx:id="showButton" layoutX="258.0" layoutY="1.0" onAction="#extendButton" style="-fx-background-color: d78a51;" text="More Information" textFill="WHITE">
+                     <font>
+                        <Font name="Futura Medium" size="15.0" />
+                     </font>
+                  </Button>
+                  <StackPane fx:id="tableViewPaneTechnical" layoutX="10.0" layoutY="50.0" prefHeight="86.0" prefWidth="708.0" visible="false">
+                     <children>
+                        <TableView fx:id="technicalDataTable" prefHeight="113.0" prefWidth="708.0">
+                           <columns>
+                              <TableColumn fx:id="brandColumn" prefWidth="100.0" text="Brand" />
+                              <TableColumn fx:id="modelColumn" prefWidth="100.0" text="Model" />
+                              <TableColumn fx:id="colorColumn" prefWidth="100.0" text="Color" />
+                              <TableColumn fx:id="bodyTypeColumn" prefWidth="100.0" text="Body Type" />
+                              <TableColumn fx:id="doorsColumn" prefWidth="100.0" text="Doors" />
+                              <TableColumn fx:id="seatsColumn" prefWidth="100.0" text="Seats" />
+                              <TableColumn fx:id="registrationDateColumn" prefWidth="100.0" text="Registration Date" />
+                              <TableColumn fx:id="generalInspectionColumn" prefWidth="100.0" text="General Inspection" />
+                              <TableColumn fx:id="consumptionColumn" prefWidth="100.0" text="Consumption" />
+                              <TableColumn fx:id="milesColumn" prefWidth="100.0" text="Miles" />
+                              <TableColumn fx:id="ownersColumn" prefWidth="100.0" text="Owners" />
+                              <TableColumn fx:id="emissionClassColumn" prefWidth="100.0" text="Emission Class" />
+                              <TableColumn fx:id="environmentalBadgeColumn" prefWidth="100.0" text="Environmental Badge" />
+                              <TableColumn fx:id="engineColumn" prefWidth="100.0" text="Engine" />
+                              <TableColumn fx:id="performanceColumn" prefWidth="100.0" text="Performance" />
+                              <TableColumn fx:id="cylinderCapacityColumn" prefWidth="100.0" text="Cylinder Capacity" />
+                              <TableColumn fx:id="gearboxColumn" prefWidth="100.0" text="Gearbox" />
+                              <TableColumn fx:id="fuelTypeColumn" prefWidth="100.0" text="Fuel Type" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </StackPane>
+                  <StackPane fx:id="tableViewPaneAusstattung" layoutX="10.0" layoutY="150.0" minHeight="150.0" prefHeight="86.0" prefWidth="708.0" visible="false">
+                     <children>
+                        <TableView fx:id="carAusstattungTable" prefWidth="588.0">
+                           <columns>
+                              <TableColumn fx:id="descriptionColumn" minWidth="300.0" prefWidth="350.0" text="Description" />
+                              <TableColumn fx:id="interiorColumn" prefWidth="100.0" text="Interior" />
+                              <TableColumn fx:id="conditionColumn" prefWidth="150.0" text="Condition" />
+                              <TableColumn fx:id="airConditioningColumn" prefWidth="200.0" text="Air Conditioning" />
+                              <TableColumn fx:id="airBagsColumn" prefWidth="150.0" text="Air Bags" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </StackPane>
+               </children>
+            </AnchorPane>
+            <ImageView fx:id="carImageView" fitHeight="188.0" fitWidth="296.0" layoutX="14.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/No-Image-Placeholder.svg.png" />
+               </image></ImageView>
+            <Button fx:id="backButton" layoutX="28.0" layoutY="35.0" mnemonicParsing="false" onAction="#backButton" style="-fx-background-color: d78a51;" text="Go Back" textFill="WHITE">
+               <font>
+                  <Font name="Futura Medium" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
